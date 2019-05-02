@@ -15,6 +15,9 @@ public class Main2 extends HttpServlet {
 		//                                         (쿼리스트링,파라미터)
 		String a = request.getParameter("a"); //a변수 : a = 1; b변수 : b = 2;
 		String b = request.getParameter("b");
+		String cc = request.getParameter("c");
+		
+		System.out.println(cc);
 		
 		String c = a + b;
 		System.out.println(c);
@@ -26,7 +29,7 @@ public class Main2 extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+		doGet(request, response);
 	}
 
 }

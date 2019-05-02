@@ -1,10 +1,44 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
-안녕하세요.
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<a href="http://localhost:8080/Y201905/Main">Main</a>
+		
+		<hr>
+		
+		<form action="http://localhost:8080/Y201905/Main2">
+			<input type="number" name="a" placeholder="a 변수 값"></input><br>
+			<input type="number" name="b" placeholder="b 변수 값"></input><br>
+			<input type="text" name="c" placeholder="c 변수 값"></input><br>
+			<input type="submit" value="GET 전송">
+		</form>
+		
+		<hr>
+		<form action="http://localhost:8080/Y201905/Main2" method="post">
+			<input type="number" name="a" placeholder="a 변수 값"></input><br>
+			<input type="number" name="b" placeholder="b 변수 값"></input><br>
+			<input type="text" name="c" placeholder="c 변수 값"></input><br>
+			<input type="submit" value="POST 전송">
+		</form>
+		
+		<hr>
+		
+		<form action="http://localhost:8080/Y201905/Main3">
+			<input type="text" name="name" placeholder="이름"></input><br>
+			<input type="number" name="age" placeholder="나이"></input><br>
+			<input type="submit" value="고객 전송">
+		</form>
+		
+		<hr>
+		
+		<form action="http://localhost:8080/Y201905/Main4">
+			<input type="number" name="a" placeholder="첫번째 수"></input><br>
+			<input type="text" name="c" placeholder="수행할 연산"></input><br>
+			<input type="number" name="b" placeholder="두번째 수"></input><br>
+			<input type="submit" value="계산">
+		</form>
+	</body>
 </html>

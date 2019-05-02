@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 public class Main extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("doGet");
+		//System.out.println("doGet");
 		
 		response.setContentType("text/html; charset=UTF-8"); 
 		response.setCharacterEncoding("UTF-8");
