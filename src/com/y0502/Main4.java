@@ -35,6 +35,9 @@ public class Main4 extends HttpServlet {
 		case "*":
 			e = (int)calc.곱셈(d, f);
 			break;
+		default:
+			response.getWriter().print("+, -, *, / 만 입력하세요");
+			break;
 		}
 		
 		response.getWriter().print(e);
