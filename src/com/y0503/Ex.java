@@ -49,10 +49,10 @@ public class Ex extends HttpServlet {
 			//사용자 검색
 			for(int i = 0; i < users.size(); i++) {
 				if(users.get(i).get이름().equals(name1)) {
-					response.getWriter().print(users.get(i).get이름());
-					response.getWriter().print(users.get(i).get나이());
-					response.getWriter().print(users.get(i).get키());
-					response.getWriter().print(users.get(i).get몸무게());
+					response.getWriter().print(users.get(i).get이름()+"<br>");
+					response.getWriter().print(users.get(i).get나이()+"<br>");
+					response.getWriter().print(users.get(i).get키()+"<br>");
+					response.getWriter().print(users.get(i).get몸무게()+"<br>");
 					check = false;
 					String html = "";
 					html = html + "<br><a href = 'http://localhost:8080/Y201905/'>처음으로</a>";
