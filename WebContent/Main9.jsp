@@ -10,7 +10,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%! // jsp 전역변수 선언법!!
+<%! // jsp 전역변수 선언법
 	List<사용자> users = new ArrayList<사용자>();
 %>
 <% 	
