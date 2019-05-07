@@ -26,21 +26,18 @@ public class Ex extends HttpServlet {
 		String age_=request.getParameter("age");
 		String tall_=request.getParameter("tall");
 		String weight_=request.getParameter("weight");
-		int age = 0;
-		int tall = 0;
-		int weight = 0;
 		
-		if(name!=null) {
-			age = Integer.parseInt(age_);
-			tall = Integer.parseInt(tall_);
-			weight = Integer.parseInt(weight_);
-		}
+		
 		
 		String name1 = request.getParameter("name1");
 		
 		boolean check = true;
 		if(name != null && name1==null) {
 			// 사용자 입력
+			int age = Integer.parseInt(age_);
+			int tall = Integer.parseInt(tall_);
+			int weight = Integer.parseInt(weight_);
+
 			users.add(new 사용자(name, age, tall, weight));
 			response.getWriter().print("성공 : " + users.size());
 			String html = "";
