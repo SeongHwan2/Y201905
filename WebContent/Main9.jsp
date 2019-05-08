@@ -24,14 +24,15 @@
 	boolean check = true;
 	
 	if(name !=null && name1 == null){
-		int age = Integer.parseInt(age_);
-		int tall = Integer.parseInt(tall_);
-		int weight = Integer.parseInt(weight_);
-		users.add(new 사용자(name, age, tall, weight));
-		String html = "";
-		html = html + "<br>전송합니다!!<br>";
-		html = html + "<br><a href = 'http://localhost:8080/Y201905/'>처음으로</a>";
-		response.getWriter().print(html);
+			int age = Integer.parseInt(age_);
+			int tall = Integer.parseInt(tall_);
+			int weight = Integer.parseInt(weight_);
+			users.add(new 사용자(name, age, tall, weight));
+			String html = "";
+			html = html + name + "(으)로 이름을 저장합니다!!<br>";
+			html = html + "<br><a href = 'http://localhost:8080/Y201905/'>처음으로</a>";
+			response.getWriter().print(html);	
+		
 	}else if(name1 != null){
 		//사용자 검색
 		for(int i = 0; i < users.size(); i++){
