@@ -2,6 +2,7 @@ package com.y0508;
 
 public class Student {
 	
+	
 	public Student(String name, String gender, String id, String pw) {
 		setName(name);
 		setGender(gender);

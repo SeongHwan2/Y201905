@@ -25,10 +25,13 @@
 	String pw2 = request.getParameter("pw2");
 	
 	String html = "";
+	boolean check = true;
 	Main11 ma = new Main11();
 	if(name != null){
 		ma.studentAdd(new Student(name, gender, id, pw));
-		html += "성공입니다";
+		
+		html += "저장이 완료되었습니다";
+		
 	}
 	
 	if(name1 != null){
@@ -39,16 +42,15 @@
 		}else{
 			html += "입력하신 " + name1 + "은 목록에 없습니다.";
 		}
-		
 	}
 	
 	if(name2 != null){
-		ma.studentCh(new Student(name2, gender1, id1, pw1));
-		html += "성공인가..!!?? ";
+		check = ma.studentCh(new Student(name2, gender1, id1, pw1));
+		html += "변경 성공입니다.";
 	}
 	
 	if(name3 != null) {
-		ma.studentRemo(new Student(name3, gender2, id2, pw2));
+		check = ma.studentRemo(new Student(name3, gender2, id2, pw2));
 		html = "삭제 되었습니다!";
 	}
 	
