@@ -16,7 +16,6 @@ public class 사용자 {//멤버 객체, 자바빈(bean) (데이터만 받을수
 	
 
 
-
 	public String get이름() {
 		return 이름;
 	}
